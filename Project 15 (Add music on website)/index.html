@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/beautification.css" />
+    <title>Add Music on website using wavesurfer</title>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+
+<body>
+    <div class="Frost-hero">
+        <div class="music-box">
+            <div class="title">
+                <p>Artist-NEFFEX</p>
+                <h3 id="title">Till My Hand Bleed</h3>
+            </div>
+            <div class="track">
+                <img src="/media/play.png" alt="" id="playbtn" />
+                <img src="/media/back.png" alt="" id="backbtn">
+                <div id="waveform"></div>
+                <img src="/media/next.png" alt="" id="nextbtn">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var playbtn = document.getElementById("playbtn");
+        var nextbtn = document.getElementById("nextbtn");
+        var backbtn = document.getElementById("backbtn");
+        var songname = document.getElementById('title');
+
+        var wavesurfer = WaveSurfer.create({
+            container: "#waveform",
+            // waveColor: "transparent",
+            waveColor: "wheat",
+            // progressColor: "lightblue",
+            progressColor: " turquoise",
+            barWidth: 4,
+            height: 80,
+            responsive: true,
+            barRadius: 4,
+        });
+        wavesurfer.load(
+            "/media/NEFFEX - Till My Hands Bleed 🤜 [Copyright Free].mp3"
+        );
+        playbtn.onclick = function () {
+            wavesurfer.playPause();
+            if(playbtn.src.includes('play.png')){
+                playbtn.src = '/media/pause.png'
+            }else{
+                playbtn.src = '/media/play.png'
+            }
+        };
+        
+        wavesurfer.on('finish',function(){
+            playbtn.src='/media/play.png';
+            wavesurfer.stop();
+        })
+
+        nextbtn.onclick = function(){
+            wavesurfer.load("/media/NEFFEX - SOMETHING YOU COULD NEVER OWN 🎸 [Copyright Free].mp3");
+            songname.innerHTML = 'Something You Could Never Own';
+            if(playbtn.src.includes('play.png')){
+                playbtn.src = "/media/pause.png"
+            }else{
+                playbtn.src = "/media/play.png"
+            }    
+        } 
+        backbtn.onclick = function(){
+            wavesurfer.load(
+            "/media/NEFFEX - Till My Hands Bleed 🤜 [Copyright Free].mp3"
+        );
+        songname.innerHTML = 'Till My Hand Bleed';
+        if(playbtn.src.includes('play.png')){
+                playbtn.src = "/media/pause.png"
+            }else{
+                playbtn.src = "/media/play.png"
+            } 
+        }
+
+    </script>
+</body>
+
+</html>

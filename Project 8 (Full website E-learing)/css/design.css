@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto:ital,wght@1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)), url(/eduford_img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    /* Another Method */
+
+    /* flex: 1;
+    text-align: right; */
+}
+
+.nav-links li {
+    /* Another Method */
+
+    /* display: inline-block; */
+    list-style: none;
+    margin: 8px 12px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 450;
+}
+
+.nav-links li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+    transition: 500ms;
+}
+
+.Text-box {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.Text-box h1 {
+    font-size: 68px;
+}
+
+.Text-box p {
+    font-size: 14px;
+    margin: 14px 0 40px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    padding: 13px 38px;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover {
+    background: orangered;
+    border: 1px solid orangered;
+
+}
+
+.nav-links i {
+    display: none;
+}
+
+#menu-bar {
+    display: none
+}
+
+/* courses section */
+
+.courses {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+p {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: rgb(243, 176, 176, 0.2);
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    border-radius: 11px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Campus secton */
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col {
+    position: relative;
+    margin-bottom: 30px;
+    flex-basis: 32%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.campus-col img {
+    width: 100%;
+    /* For bottom of img( effect of border-radius) */
+    display: block;
+}
+
+.layer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.layer h3 {
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+    /* For centering the text */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+}
+
+/* -----Facilities----- */
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities-col {
+    position: relative;
+    flex-basis: 31%;
+    text-align: left;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.facilities img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.facilities-col p {
+    padding: 0;
+}
+
+.facilities-col h3 {
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 16px;
+}
+
+/* -----Testimonials----- */
+.testimonials {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top:100px ;
+}
+.testimonials-col{
+    display: flex;
+    margin-bottom: 5%;
+    flex-basis: 44%;
+    border-radius: 10px;
+    padding:25px;
+    cursor: pointer;
+    background: rgb(243, 176, 176, 0.2);
+    text-align: left;
+}
+.testimonials-col img{
+    height: 40px;
+    margin: 0 30px 0 5px;
+    border-radius: 50%;
+}
+.testimonials-col p{
+    padding: 0;
+}
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonials-col .fa-solid {
+    color:orangered;
+}
+.testimonials-col .fa-regular{
+    color: orangered;
+}
+/* -----Call to Action */
+.cta{
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(/eduford_img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+}
+.cta h1{
+    color: white;
+    padding: 0;
+    margin-bottom: 42px;
+}
+/* Footer */
+.footer{
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+.footer h4{
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.icons .fa-brands{
+    color: orangered;
+    padding:17px 0;
+    margin: 0 12px;
+    cursor: pointer;
+}
+.fa-regular{
+    color: orangered;
+}
+
+
+
+/* Media Query */
+@media(max-width:700px) {
+
+    /* -----nav bar-----*/
+    .Text-box h1 {
+        font-size: 28px;
+    }
+
+    .nav-links li {
+        display: block;
+        position: relative;
+        padding: 4px;
+        top: 10%;
+        left: 15%;
+    }
+
+    .nav-links {
+        display: flex;
+        /* To fixed scroll (right) absolute->fixed */
+        position: fixed;
+        background: orangered;
+        height: 100vh;
+        width: 200px;
+        flex-direction: column;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        transition: 1000ms;
+    }
+
+    .nav-links i {
+        display: block;
+        position: absolute;
+        color: white;
+        top: 3%;
+        left: 9%;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    #menu-bar {
+        color: white;
+        display: block;
+    }
+
+    /* -----courses-col----- */
+    .row {
+        flex-direction: column;
+    }
+    /* -----testimonials */
+    .testimonials-col img{
+        margin: 0 15px 0 0;
+    }
+    /* -----Call To Action----- */
+    .cta h1{
+        font-size: 23px;
+    }
+
+    /* ------Blog page------ */
+    .sub-header h1{
+        font-size: 25px;
+    }
+}
+
+
+/* -------------About Us Page--------------- */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7) , rgba(4,9,30,0.7) ),url(/eduford_img/background.jpg);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+.sub-header h1{
+    margin-top: 49px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.about-col{
+    /* border: 2px solid red; */
+    flex: 48%;
+    padding: 36px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 20px 0 25px;
+}
+/* ----button---- */
+.red-btn{
+    border: 2px solid red;
+    color: orangered;
+    transition: 0.8s ease-in;
+}
+.red-btn:hover{
+    color: white;
+}
+
+
+/* ------------Blog page------------- */
+.blog-content{
+    width: 80%;
+    margin: auto;    
+    padding: 60px 0 ;
+}
+
+.left-content{
+    flex-basis: 65%;
+}
+.left-content img{
+    width: 100%;
+}
+.left-content h1{
+    font-weight: 600;
+    margin: 30px 0;
+}
+.left-content p{
+    padding:0;
+}
+
+.right-content{
+    flex-basis: 31%;
+    margin-top: 30px;
+}
+.right-content h3{
+    font-size: 18px;
+    color: white;
+    padding: 8px 0;
+    margin-bottom: 20px ;
+    background: orangered;
+}
+.right-content div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    box-sizing: border-box;
+    color:rgb(51, 51, 51);
+}
+
+.comment-box{
+    border: 1px solid #555;
+    margin-top: 55px;
+    padding: 10px 22px;
+}
+.comment-box h3{
+    text-align: left;
+}
+.comment-form input,.comment-form textarea{
+    width: 100%;
+    padding: 9px;
+    margin: 16px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: rgb(235, 233, 233);
+}
+.comment-form button{
+    margin: 11px 0;
+}
+
+/* contact page */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa-solid{
+    color: orangered;
+    margin-right: 25px;
+    font-size: 20px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(85, 85, 85);
+}
+
+.contact-col input , .contact-col textarea{
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    margin:10px 0;
+    border: 1px solid rgb(199, 198, 198);
+}

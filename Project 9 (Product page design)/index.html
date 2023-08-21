@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Product page design</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-page">
+            <div class="left-side">
+                <img src="img/image1.png" alt="image1.png" id="ProductImg"/>
+                <div class="controls">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+            <div class="right-side">
+                <h1>Casual T Shirt</h1>
+                <h2>$18.00</h2>
+                <h3>35% OFF</h3>
+                <p>
+                    Wrangler is American manufacturer of jeans and other clothing
+                    items,particularly workwear
+                </p>
+
+                <form>
+                    <div class="size-options">
+                        <p>Size</p>
+                        <label for="small">
+                            <input type="radio" name="size" id="small" />
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium" />
+                            <span>M</span>
+                        </label>
+                        <label for="large">
+                            <input type="radio" name="size" id="large" />
+                            <span>L</span>
+                        </label>
+                        <label for="x-large">
+                            <input type="radio" name="size" id="x-large" />
+                            <span>XL</span>
+                        </label>
+                        <label for="xx-large">
+                            <input type="radio" name="size" id="xx-large" />
+                            <span>XXL</span>
+                        </label>
+                    </div>
+
+                    <div class="color-options">
+                        <p>Color</p>
+                        <label for="red">
+                            <input type="radio" name="color" id="red" />
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="green">
+                            <input type="radio" name="color" id="green" />
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="pink">
+                            <input type="radio" name="color" id="pink" />
+                            <span class="color-3"></span>
+                        </label>
+                        <label for="blue">
+                            <input type="radio" name="color" id="blue" />
+                            <span class="color-4"></span>
+                        </label>
+                        <label for="yellow">
+                            <input type="radio" name="color" id="yellow" />
+                            <span class="color-5"></span>
+                        </label>
+                    </div>
+                    <div class="quantity-options">
+                        <p>Quantity</p>
+                        <input type="number" value="1" />
+                    </div>
+                    <button>Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

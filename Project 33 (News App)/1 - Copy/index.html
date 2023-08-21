@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>News App</title>
+</head>
+<body>
+    <nav>
+        <div class="Nav-bar flex">
+            <a href="#">
+                <img src="/images/NewsLogo.png" id="logo">
+            </a>
+            <div class="nav-links  ">
+                <ul class="flex">
+                    <li id="cricket" onclick="OnNavItem('cricket') " >cricket</li>
+                    <li id="finance" onclick="OnNavItem('finance')">finance</li>
+                    <li id="business" onclick="OnNavItem('business')">business</li>
+                </ul>
+                <img src="/images/close 2.png" id="close-img">
+            </div>
+            <div class="nav-searchBar  flex">
+                <input type="search" class="newsSearch" placeholder="eg..Science">
+                <button type="submit" class="newsSubmit">SEARCH</button>
+                <img src="/images/menu1.png" id="menu-Img">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="Card-Container flex container"></div>
+    </main>
+
+    <template Card-Template>
+        <div class="Card">
+            <div class="card-header">
+                <img id="news-Img" src="https://via.placeholder.com/400x200" alt="">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is titile</h3>
+                <h6 id="news-source">End gadet 26/08/2023</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod similique, omnis consequuntur dolore molestiae sint animi veniam illo a iure temporibus placeat aspernatur quis molestias enim amet, modi in laborum facere blanditiis!</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.calculator{
+    background: rgb(24, 24, 63);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 6px rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.2);
+}
+
+.calculator form input{
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline:none;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
+    cursor:pointer;
+    color: white;
+    background: transparent;
+    box-shadow: 2px 2px rgba(255, 255, 255, 0.4);
+}
+form .Display{
+    /* border: 2px solid black; */
+    display:flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+.Display input{
+    flex: 1;
+    text-align: right;
+    font-size: 45px;
+}
+form input.Result{
+    width: 133px;
+}

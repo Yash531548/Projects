@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 2rem;
+    width: 400px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 10px ;
+    outline: none;
+}
+
+.output{
+    margin-top: 2rem;
+}
+
+/* javascript */
+
+.todo{
+    border-left: 4px solid blue;
+    display: flex;
+    color: rgb(75, 75, 105);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px ;
+    background-color: white;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.delete{
+    color: blueviolet;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.message-box{
+    position: absolute;
+    bottom: 1.5em;
+    left: 10em;
+    background: white;
+    padding: 20px;
+    font-family: sans-serif;
+    transform: translateX(0);
+    visibility: hidden;
+    transition: transform 1s ease;
+}
+
+.success {
+    transform: translateX(100px);
+    visibility: visible;
+    background-color: rgb(34, 187, 51);
+    color: white;
+}
+.error {
+    transform: translateX(100px);
+    visibility: visible;
+    background-color: rgb(212, 59, 32);
+    color: white;
+}

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.showcase{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.bg-video{
+    position: absolute;
+    background: orangered;
+    width: 100%;
+    height: 100vh;
+    /* border: 5px solid purple; */
+}
+.bg-video video{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* z-index: 1; */
+}
+.text-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    /* Two variations */
+    background-color: black;
+    /* background-color: purple; */
+    justify-content: center;
+    mix-blend-mode: multiply;
+}
+.text-box h1{
+    z-index: 10;
+    font-size:13rem ;
+    color: white;
+}

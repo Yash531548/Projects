@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.container{
+    padding: 0 8%;
+}
+nav {
+    display: flex;
+    width: 100%;
+    min-height: 5rem;
+    /* background-color: black; */
+}
+
+.right-nav {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid violet; */
+}
+
+.right-nav img {
+    width: 180px;
+}
+/* 1 rem = 16px */
+.lists {
+    padding: 0 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+}
+.anchor-tag {
+    padding: 0 2rem;
+    text-decoration: none;
+    margin-left: 50px;
+    color: white;
+    border: none;
+}
+
+.left-nav {
+    width: 55%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.left-nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin:0 10px;
+}
+.left-nav .btn{
+    color: black;
+    background: white;
+    border: 2px solid grey;
+    border-radius: 7px;
+    padding: 5px 19px;
+}
+.btn:hover{
+    color: white;
+    background: transparent;
+    border: 3px solid black;
+    transition: all ease-in-out 250ms;
+}
+.content{
+    margin-top:8.3rem;
+    color: white;
+}
+.content h1{
+    font-size: 3.3rem;
+}
+.search-box{
+    background: white;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 16px 24px;
+    margin: 20px 0px;
+    border-radius: 6px;
+}
+.search-box input{
+    background: transparent;
+    border: 0;
+    width: 530px;
+    text-align: left;
+    outline:none;
+}
+.search-box button{
+background: transparent;
+cursor: pointer;
+border: none;
+}
+.search-box button img{
+    width: 22px;
+}
+.button{
+    margin-top: 79px;
+}
+.button img{
+    background: rgba(0,0,0,0.3);
+    padding: 16px 18px;
+    width: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 6px;
+}
+

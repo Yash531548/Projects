@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Search Box-Finding table  </title>
+</head>
+<body>
+    <main>
+        <div class="search-wrapper">
+            <label for="search">Search Names here</label>
+            <input type="text" name="" id="search" data-search placeholder="Search here.." autofocus>
+        </div>
+        <div class="user-cards" data-user-container>
+        </main>
+        <template data-user-template>
+            <div class="card">
+                <div class="header" data-header>Name</div>
+                <div class="body" data-body>Email@gmail.com</div>
+            </div>
+        </template>
+    <script src="app.js"></script>
+</body>
+</html>

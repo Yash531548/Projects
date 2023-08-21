@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.container{
+    background-image: url(/Webpage\ images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.navbar{
+    width: 85%;
+    height: 15%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+button{
+    padding: 10px 25px;
+    margin: 15px;
+    background:transparent;
+    border: 2px solid white;
+    color: #fbfbfb;
+    /* font-weight: bold; */
+    font-size:15px;
+    border-radius: 22px;
+    outline: none;
+    cursor: pointer;
+}
+.logo{
+    cursor: pointer;
+    width: 100px;
+}
+.content{
+    position:absolute;
+    top: 35%;
+    left: 15%;
+    color: white;
+} 
+h1{
+    /* For consider white space as to change new line */
+    white-space: pre;
+    font-size: 65px;
+    line-height: 81px;
+}
+.sidebar{
+    height: 100vh;
+    width: 50px;
+    background: linear-gradient(rgb(8 50 76), rgb(4 107 114));
+    top: 0;
+    right: 0;
+    position: absolute;
+    /* display: block; */
+}
+.menu{
+    display: block;
+    margin: 45px auto 0;
+    width: 25px;
+    cursor:pointer;
+}
+.social-links img, .other-links img{
+    width: 30px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.social-links{
+    position: absolute;
+    transform: translateY(-50%);
+    width: 50px;
+    text-align: center;
+    top: 50%;
+}
+.other-links{
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    bottom: 30px;
+}
+#bubbles img{
+    width: 50px;
+    animation: bubble 5s linear infinite;
+    /* animation-name: bubble;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+#bubbles{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* To hide bubbles which are shown at the end of page */
+    /* So we just initialise bubbles at -70px */
+    bottom: -70px;
+    position: absolute;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+#bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+#bubbles img:nth-child(2){
+    animation-delay: 1s;
+    width: 40px;
+}
+#bubbles img:nth-child(3){
+    animation-delay: 2.5s;
+    width: 70px;
+}
+#bubbles img:nth-child(4){
+    animation-delay: 3.5s;
+    width: 55px;
+}
+#bubbles img:nth-child(5){
+    animation-delay: 2s;
+    width: 75px;
+}
+#bubbles img:nth-child(6){
+    animation-delay: 5s;
+}
+#bubbles img:nth-child(7){
+    animation-delay: 6s;
+    width: 60px;
+}
+#bubbles img:nth-child(8){
+    animation-delay: 3.5s;
+}

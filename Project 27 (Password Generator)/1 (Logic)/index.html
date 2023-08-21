@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <section>
+        <!-- <a href="https://www.google.com/" >logo</a> -->
+        <div class="box">
+            <textarea name="" id="Pass_dis" cols="30" rows="1">Password</textarea>
+        </div>
+        <div class="box">
+            <div class="right">Length</div>
+            <div class="left">
+                <input type="number" value="10" id="Pass_length" max="20" min="2">
+            </div>
+        </div>
+        <div class="box">
+            <div class="right">UpperCase</div>
+            <div class="left">
+                <input type="checkbox" name="" id="Upper_char" checked>
+            </div>
+        </div>
+        <div class="box">
+            <div class="right">LowerCase</div>
+            <div class="left">
+                <input type="checkbox" name="" id="Lower_char" checked>
+            </div>
+        </div>
+        <div class="box">
+            <div class="right">Numbers</div>
+            <div class="left">
+                <input type="checkbox" name="" id="Numbers_char" checked>
+            </div>
+        </div>
+        <div class="box">
+            <div class="right">Symbols</div>
+            <div class="left">
+                <input type="checkbox" name="" id="Symbols_char" checked>
+            </div>
+        </div>
+        <div class="box">
+            <button id="pass_btn">Generate</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

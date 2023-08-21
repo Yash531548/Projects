@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+.showcase{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(207, 174, 174,0.1),rgb(207, 174, 174,0.4)), url(/images/watch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 5%;
+}
+
+
+.showcase nav{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 1s;
+    padding: 15px 0 5px 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+}
+.logo h2 {
+    text-transform: uppercase;
+}
+.logo h2 a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    color: white;
+    margin-right: 29px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu li a:hover{
+    font-weight: 700;
+}
+nav:hover{
+    background: white;
+}
+nav:hover .logo h2 a{
+    color: black;
+}
+nav:hover li a{
+    color: black;
+}
+
+.text{
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    /* border: 2px solid red; */
+}
+.text h1{
+    font-size: 100px;
+    line-height: 100px;
+}
+.text p{
+    padding: 0;
+    margin-top: 11px;
+}
+.links{
+    position: absolute;
+    bottom:28%;
+    left:10%;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+}
+.btn{
+    border: 2px solid white;
+    padding: 10px 25px ;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: white;
+    color: black;
+}
+
+.slide{
+    animation: slide 1.5s linear forwards;
+}
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* p.slide{
+    animation-delay: 1s;
+}
+.links.slide{
+    animation-delay: 1s; 
+}*/

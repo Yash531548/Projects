@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    padding: 2%;
+}
+
+.search-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    width: 50rem;
+    /* border: 2px solid red; */
+    font-size: 2.7rem;
+}
+
+input{
+    font-size: 1.5rem;
+    border: 1px solid black;
+    outline: 0;
+    padding: 1%;
+}
+
+.user-cards{
+    margin: 1rem 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card{
+    border: 1px solid grey;
+    padding: .5rem;
+    background:white;
+}
+.card > .header{
+    margin-bottom: .25rem;
+}
+
+.card >.body{
+    font-size: .8rem;
+    color: #777;
+}
+
+.hide{
+    display: none;
+}
+

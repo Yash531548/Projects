@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.left-side{
+    height: 100vh;
+    width: 30%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: transform .5s ease-in-out;
+}
+.left-side>div{
+    height: 100%;
+    /* 100% of left-side container widht which is 30% */
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+.left-side>div h1{
+    font-size: 45px;
+    padding-bottom: 17px;
+    margin-top: -70px;
+}
+
+.right-side{
+    position:absolute;
+    height: 100vh;
+    width: 70%;
+    top: 0;
+    /* For smooth transition rather than just flicking */
+    transition: transform .5s ease-in-out;
+    /* As left side cover up 30% of the width */
+    left: 30%;
+}
+.right-side > div{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width:100%;
+}
+
+button{
+    font-size: 18px;
+    padding: 13px;
+    color:white;
+    /* border: 2px solid white; */
+    border:none;
+    cursor: pointer;
+    background:transparent;
+    
+    /* An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out" */
+    /* outline: 2px solid purple; */
+}
+
+button:hover{
+    background-color: white;
+    color:black;
+}
+
+.down-button:hover{
+    border-radius: 7px 1px 1px 3px;
+}
+
+.up-button:hover{
+    border-radius: 1px 7px 3px 1px;
+}
+
+.button-controls button{
+position: absolute;
+top:52%;
+left: 30%;
+z-index: 100;
+}
+.down-button{
+    /*for moving it to left use negative sign*/
+    transform: translateX(-100%);
+}
+.up-button{
+    transform: translateY(-100%);
+}

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    display: flex;
+}
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid purple; */
+}
+.left{
+    width: 50%;
+    /* border: 2px solid red; */
+}
+.left img{
+    width: 90%;
+    height: 90%;
+}
+.STopWatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    width: 40vw;
+    height: 50vh;
+    /* border: 2px solid red;  */
+    font-size: 2.5rem;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/tree-736885_640.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.STopWatch .Timer{
+    /* border: 2px solid purple; */
+    font-size: 2em;
+    margin-bottom: 35px;
+}
+.STopWatch .buttons{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5vw;
+    font-size: 2rem;
+    transform: translateY(10px);
+    cursor: pointer;
+}
+
+.buttons ion-icon:nth-child(2){
+    font-size: 4rem;
+    color:orangered;
+}

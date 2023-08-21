@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/design.css" />
+    <title>Animals website design - video gallery</title>
+</head>
+
+<body>
+    <div class="showcase">
+        <h1>
+            Until one has loved an Animal <br />A part of one's soul remains
+            Unawakened
+        </h1>
+        <div class="row">
+            <div class="col">
+                <div class="large-img-col">
+                    <img src="/img & video/pexels-dick-hoskins-2753515.jpg" class="zoom-in-out"alt="" />
+                    <i class="fa-regular fa-circle-play" class="playbtn" onclick="playvideo('/img & video/penguin.mp4')"></i>
+                    <!-- <i class="fa-solid fa-circle-play"></i> -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-imgs-col">
+                    <img src="/img & video/pexels-pixabay-86596.jpg" alt="" />
+                    <i class="fa-regular fa-circle-play small-playbtn playbtn" onclick="playvideo('/img & video/owl.mp4')"></i>
+                    <p>Owl is the grand <br> rather clever old man of the forest</p>
+                </div>
+                <div class="col">
+                    <div class="small-imgs-col">
+                        <img src="/img & video/pexels-richard-segal-1618606.jpg" alt="" />
+                        <i class="fa-regular fa-circle-play small-playbtn" onclick="playvideo('/img & video/seaturtle.mp4')"></i>
+                        <p>A turtle travels <br>only when it sticks its neck out.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="small-imgs-col">
+                        <img  class="sea-otter" src="/img & video/david-groves-wYYh-WbJ3RA-unsplash.jpg" alt="" />
+                        <i class="fa-regular fa-circle-play small-playbtn playbtn" onclick="playvideo('/img & video/seaotter.mp4')"></i>
+                        <p>Otters loved the winter <br>They liked making angels in the snow.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="video-viewer">
+        <div>
+
+            <video src="/img & video/penguin.mp4" controls autoplay id="pvideo" ></video>
+            <i class="fa-regular fa-circle-xmark" id="closebtn"></i>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/84901b87e5.js" crossorigin="anonymous"></script>
+    <script src="/js/logic.js"></script>
+</body>
+
+</html>

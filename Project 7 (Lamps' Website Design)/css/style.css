@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(40, 46, 56);
+    /* background: #242831; */
+    color: white;
+    position: relative;
+}
+
+nav {
+    /* border: 2px solid red; */
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+}
+
+nav .menu {
+    width: 22px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+nav .logo {
+    width: 140px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    /* display:flex; */
+    display: inline-block;
+    list-style: none;
+    margin: 0 21px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background: white;
+    width: 60px;
+    height: 28px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    /* for javascript */
+    transition: background 0.4s, margin-left 0.4s;
+}
+
+button span{
+    display: block;
+    background: rgb(159, 159, 160);
+    border: 0;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    /* for javasvript */
+    transition: background 450ms, margin-left 450ms;
+}
+
+.Lamp-container{
+    position: absolute;
+    /* border: 2px solid red; */
+    top: -10px;
+    left: 25%;
+    width: 15rem;
+}
+
+.lamp{
+    width: 10rem;
+}
+.light{
+    position: absolute;
+    top: 97%;
+    width: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -45px;
+    /* for javascript */
+    transition: opacity 450ms;
+    opacity: 0;
+}
+
+.Text-container{
+    /* border: 2px solid red; */
+    max-width: 75rem;
+    margin-left: 50%;
+    margin-top:7%;
+    margin-right:3%;
+    box-sizing: border-box;
+}
+.Text-container h1{
+    font-size: 5.1rem;
+    font-weight: 460;
+    /* text-align: center; */
+}
+
+.Text-container p{
+    font-family: sans-serif;
+    margin: 10px 0 40px 0 ;
+}
+.Text-container a{
+    text-decoration: none;
+    background: rgb(30, 124, 112);
+    display: inline-block;
+    padding: 14px 85px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* for javascript */
+.active{
+    background: green;
+}
+.active span{
+    background: white;
+    margin-left:31px;
+    /* transition: all ease-in-out 400ms; */
+}
+.lamp-light{
+    opacity: 1;
+    /* transition: all ease-in-out 400ms; */
+}

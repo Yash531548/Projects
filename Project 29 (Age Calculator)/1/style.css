@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(135deg,#4203a9,#90bafc);
+    padding: 10px;
+    color: white;
+}
+
+.Text_box{
+    /* border: 2px solid red; */
+    width: 100%;
+    max-width: 600px;
+    margin-top: 6%;
+    margin-left: 10%;
+}
+
+.Text_box h1{
+    font-size: 50px;
+}
+
+.Text_box h1 span{
+    color: rgb(248, 248, 69);
+}
+
+.Calender{
+    /* border: 2px solid brown; */
+    margin-top: 40px;
+    padding: 35px 35px;
+    background:rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Calender input{
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 18px;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+}
+.Calender input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 25px;
+    cursor: pointer;
+}
+.Calender button{
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    color: #333;
+    background: rgb(248, 248, 69);
+}
+
+#ageDisplayer{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+#ageDisplayer span{
+    color: yellow;
+}

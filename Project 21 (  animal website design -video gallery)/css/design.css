@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.showcase{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background: linear-gradient(#000428,#004e92);
+}
+.showcase h1{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    transform: translateY(13%);
+}
+.row{
+    /* border: 2px solid red ; */
+    width: 80%;
+    margin: 4% auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 50%;
+    /* border: 2px solid green; */
+    min-width: 260px;
+}
+.large-img-col{
+    width: 90%;
+    margin:auto;
+    position: relative;
+    overflow: hidden;
+    transition: 1s ;
+    
+}
+.large-img-col img{
+    width: 98%;
+    box-shadow: 0 0 10px  white;
+    border-radius: 6px;
+        transition: 1s;}
+
+.large-img-col img:hover{
+    transform: scale(1.2);
+}
+.large-img-col:hover{
+    
+    box-shadow: 0 0 10px  white;
+}
+
+.small-imgs-col{
+    width: 94%;
+    background: transparent;
+    overflow:hidden;
+    display:flex;
+    margin: auto;
+    color: white;
+    padding: 2% 0;
+    position: relative;
+}
+.small-imgs-col img{
+    width: 30%;
+    box-shadow: 0 0 10px  white;
+    margin-top:auto ;
+    border-radius: 6px;
+    transform: translateY(2%);
+    transition: 1s;
+}
+.small-imgs-col img:hover{
+    transform: scale(1.5);
+}
+.small-imgs-col p{
+    text-align: center;
+    font-size: 18px;
+    transform: translate(20%,40%);
+}
+
+/* Icons */
+.fa-circle-play{
+    color: white;
+    position: absolute;
+    font-size: 70px;
+    /* color: #17609f; *
+    /* color: rgb(182, 34, 175); */
+    top: 50%;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.small-playbtn{
+    font-size: 2rem;
+    left: 14%;
+    cursor: pointer;
+}
+
+#video-viewer{
+    width: 80%;
+    margin: auto;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+#video-viewer video{
+    width: 100%;
+    /* z-index: 1; */
+    outline: none;
+}
+#closebtn{
+    position: absolute;
+    cursor: pointer;
+    /* z-index: 10; */
+    color:white;
+    font-size: 25px;
+    top: 1%;
+    right: 1%;
+} 

@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background: rgb(184, 184, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pannel{
+    width: 80%;
+    height: 85%;
+    background: white;
+    border-radius: 7px ;
+    overflow: hidden;
+}
+
+#ptop{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(88, 86, 168);
+    color: white;
+    display: flex;
+    align-items: center ;
+    justify-content: space-evenly;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.box{
+    color: black;
+    width: 4vw;
+    height: 3vw;
+    background: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 540;
+    font-size: 22px;
+}
+
+#pbtm{
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: rgb(12, 2, 46);
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+    gap: 10px;
+    color: white;
+    /* border: 2px solid red; */
+}
+
+#pbtm button:nth-child(1){
+    display: none;
+}
+
+#pbtm.active button{
+    display: block;
+    border: none;
+    outline: none;
+    padding: 1vw 1vw;
+    border-radius: 7px ;
+    background-color:rgb(88, 86, 168);
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: 0.4s;
+    box-shadow: 0 0 10px 3px rgba(88, 86, 168,0.5);
+}
+#pbtm button:hover{
+    letter-spacing: 10px;
+    cursor: pointer;
+    background-color: #504fa7; 
+}
+
+.gameEnd{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    /* border: 2px solid red; */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    color: white;
+}
+
+.gameEnd h2{
+    letter-spacing: 1.7vw;
+    font-weight: 600;
+    margin-bottom: 5%;
+    font-size: 280%;
+}
+
+.gameEnd span{
+    font-size: 1.7vw;
+    margin-bottom:6% ;
+}
+.gameEnd #score{
+    margin-left: 1%;
+    font-size: 3.5vw;
+    color: rgb(205, 202, 248) ;
+}
+
+.gameEnd button{
+    border: none;
+    outline: none;
+    padding: 1vw 1vw;
+    border-radius: 7px ;
+    background-color:rgb(88, 86, 168);
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: 0.4s;
+    box-shadow: 0 0 10px 3px rgba(88, 86, 168,0.5);
+}
+.gameEnd button:hover{
+    letter-spacing: 10px;
+    cursor: pointer;
+    background-color: #504fa7; 
+}
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(218, 216, 245);
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 300;
+    color: rgb(22, 22, 75);
+}
+
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(184, 180, 243); ;
+}
