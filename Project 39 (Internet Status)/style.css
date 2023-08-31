@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Status{
+    border: 1px solid black;
+    width: 90vmin;
+    padding: 1em;
+    text-align: center;
+    border-radius: 1vmin;
+    font-size: 4vmin;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.Internet-available{
+    background-color: rgb(219, 245, 219);
+    color: #033103;
+    box-shadow: 0 0 20px 2px #033103;
+}
+.Internet-Not_available{
+    background-color: rgb(248, 221, 216);
+    color: #1a0602;
+    box-shadow: 0 0 20px 2px #701707;
+}
+
+
+
