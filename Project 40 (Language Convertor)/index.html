@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Language Convertor</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea name="from-text" placeholder="Enter Text"></textarea>
+                <textarea name="to-text" placeholder="Translation..." readonly disabled></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <ion-icon name="volume-high"></ion-icon>
+                        <ion-icon name="copy"></ion-icon>
+                    </div>
+                    <select>
+                    </select>
+                </li>
+                <ion-icon name="code-working-outline"></ion-icon>
+                <li class="row to">
+                    <select>
+                    </select>
+                    <div class="icons">
+                        <ion-icon name="volume-high"></ion-icon>
+                        <ion-icon name="copy"></ion-icon>
+                    </div>
+                </li>
+            </ul>
+            <button>Translate<div class="overlay"></div></button>
+            
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- by importing script into body we can use country.js into app.js file -->
+    <script src="/js/country-list.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

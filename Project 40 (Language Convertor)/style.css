@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #a8edea 10%, #fed6e3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 100vmin;
+    padding: 5vmin;
+    background-color: rgba(255, 255, 255,0.3);
+    box-shadow: 0 0 12px 2px rgba(255, 255, 255,1),0 0 10px 0px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.text-input,.controls,.row{
+    display: flex;
+    align-items: center;
+}
+.text-input textarea{
+    width: 50%;
+    height: 50vmin;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 1%;
+    font-size: 18px;
+    border: 2px solid #9f9f9f;
+    margin-bottom: 3vmin;
+}
+
+.text-input textarea:nth-child(1){
+    border-right: none;
+}
+
+.controls{
+    border: 2px solid #9f9f9f;
+    justify-content: space-between;
+    list-style: none;
+}
+.controls .row{
+    width: 40%;
+    justify-content: space-around;
+    padding: 2vmin;
+}
+
+ion-icon{
+    font-size: 4vmin;
+    cursor: pointer;
+}
+
+.icons ion-icon{
+    font-size: 3vmin;
+    margin-right: 2vmin;
+}
+
+.row select{
+    width: 20vmin;
+    height: 4vmin;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+    color: #5e5d5d;
+    background: transparent;
+}
+select:nth-child(2){
+    border-left: 2px solid #9f9f9f;
+}
+select:nth-child(1){
+    border-right: 2px solid #9f9f9f;
+}
+
+button{
+    width: 100%;
+    height: 8vmin;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #9f9f9f;
+    margin-top: 2vmin;
+    background-color: white;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+button:hover{
+    letter-spacing: 8px;
+}
+button:hover .overlay{
+    transform: translateX(0);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    transform: translateX(100%);
+    bottom: 0;
+    width: 100%;
+    background: #a8edea;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
