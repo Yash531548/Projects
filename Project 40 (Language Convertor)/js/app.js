@@ -28,6 +28,7 @@ translateBtn.addEventListener("click", () => {
     let Text = FromText.value;
     let fromlang = selectTag[0].value,
         tolang = selectTag[1].value;
+    if(!Text) return
     let APIurl = `https://api.mymemory.translated.net/get?q=${Text}!&langpair=${fromlang}|${tolang}`
     /** fetching api response and returning it with parsing into json onj
      * and in another then method is receiving tha obj
