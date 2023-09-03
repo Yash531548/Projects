@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+
+.wrapper {
+    width: 70vmax;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    padding: 1vmax;
+    box-shadow: 0 0 100px 2px orangered, 0 0 10px white, 0 0 5px black;
+}
+
+.text-input,
+.controls,
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.text-input textarea {
+    width: 50%;
+    height: 20vmax;
+    resize: none;
+    border: 2px solid rgba(0, 0, 0, 0.568);
+    outline: none;
+    font-size: 1.3vmax;
+    padding: 0.5vmax;
+}
+
+textarea:nth-child(1) {
+    border-right: none;
+}
+
+textarea:nth-child(1):focus {
+    border: 2px solid orangered;
+}
+
+.controls {
+    border: 2px solid rgba(0, 0, 0, 0.548);
+    border-top: none;
+    height: 3vmax;
+}
+
+.row {
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.icons {
+    width: 9vmax;
+}
+
+.icons ion-icon {
+    cursor: pointer;
+    font-size: 1.6vmax;
+    margin: 0 0.5vmax;
+}
+
+ion-icon[name='code-working'] {
+    font-size: 1.8vmax;
+    cursor: pointer;
+}
+
+.row select {
+    width: 15vmax;
+    font-size: 1.2vmax;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.514);
+    cursor: pointer;
+}
+
+.row select:nth-child(2) {
+    border-left: 2px solid black;
+}
+
+.row select:nth-child(1) {
+    border-right: 2px solid black;
+}
+
+button {
+    width: 100%;
+    height: 4vmax;
+    color: white;
+    font-size: 1.5vmax;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.514);
+    border-top: none;
+    outline: none;
+    background-color: orange;
+    transition: 0.6s ease;
+    letter-spacing: 0.5vmax;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: rgb(243, 119, 4);
+    letter-spacing: 1vmax;
+}
