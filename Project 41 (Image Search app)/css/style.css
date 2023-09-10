@@ -101,7 +101,7 @@ button:hover{
     width: 100%;
     padding:3.5vmax;
     background-color: white;
-    columns: 4;
+    columns: 4 250px;
     column-gap: 2vmax;
 }
 
@@ -213,4 +213,13 @@ button:hover{
 
 .next-img{
     right: 0;
+}
+
+@media (max-width:360px){
+    .image-pop{
+        width: 100%;
+    }
+    .Large-img{
+        min-width: 75%;
+    }
 }
