@@ -1,8 +1,8 @@
 let searchParams = location.search.split('=').pop();
 
 let access_key = 'f5Y2rOeCxmnqQHCXsLBGqNqG5vbwJXtAjckbqKr-ZWA';
-
-let Search_url = `https://api.unsplash.com/search/photos?client_id=${access_key}&query=${searchParams}&per_page=70`
+let page= 1;
+let Search_url = `https://api.unsplash.com/search/photos?client_id=${access_key}&query=${searchParams}&page=${page}&per_page=50`
 
 let Random_url =`https://api.unsplash.com/photos/random?client_id=${access_key}&count=30`
 
@@ -18,6 +18,7 @@ const getImages=()=>{
         allImages = data
         makeImageCard(allImages)
     })
+    ShowMorebtn.style.display = 'block'
 }
 
 const searchImages=()=>{
@@ -26,6 +27,7 @@ const searchImages=()=>{
         allImages = data.results
         makeImageCard(allImages)
     })
+    ShowMorebtn.style.display = 'block'
 }
 
 const makeImageCard = (data)=>{
@@ -33,6 +35,7 @@ const makeImageCard = (data)=>{
         let imgCard = document.createElement('img')
         imgCard.src = item.urls.regular;
         imgCard.className = 'gallery-img'
+        imgCard.target = '_blank'
 
         gallery.appendChild(imgCard)
 
@@ -45,14 +48,8 @@ const makeImageCard = (data)=>{
 
 if(searchParams == ''){
     getImages()
-    // ShowMorebtn.addEventListener("click",()=>{
-    //     getImages()
-    // })    
 }else{
     searchImages()
-    // ShowMorebtn.addEventListener("click",()=>{
-    //     searchImages()
-    // })        
 }
 
 
@@ -90,5 +87,15 @@ nextImageBtn.addEventListener("click",()=>{
     if(Imageindex < allImages.length -1){
         Imageindex++;
         popupImage(allImages[Imageindex])
+    }
+})
+
+
+ShowMorebtn.addEventListener("click",()=>{
+    if(searchParams == ''){
+        getImages()
+    }else{
+        page++;
+        searchImages()
     }
 })
