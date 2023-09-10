@@ -2,7 +2,7 @@ let searchParams = location.search.split('=').pop();
 
 let access_key = 'f5Y2rOeCxmnqQHCXsLBGqNqG5vbwJXtAjckbqKr-ZWA';
 let page= 1;
-let Search_url = `https://api.unsplash.com/search/photos?client_id=${access_key}&query=${searchParams}&page=${page}&per_page=50`
+let Search_url = `https://api.unsplash.com/search/photos?client_id=${access_key}&query=${searchParams}&page=${page}&per_page=30`
 
 let Random_url =`https://api.unsplash.com/photos/random?client_id=${access_key}&count=30`
 
@@ -24,6 +24,7 @@ const getImages=()=>{
 const searchImages=()=>{
     fetch(Search_url).then(Response => Response.json())
     .then(data => {
+        console.log(data)
         allImages = data.results
         makeImageCard(allImages)
     })
