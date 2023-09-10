@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/img/BackgroundImage.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.header-content{
+    width: 40%;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.logo{
+    font-size: 8vmax;
+    text-transform: capitalize;
+    color: #2E3442;
+    font-weight: 570;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sub-line{
+    margin: 2vmax 0 3vmax;
+    font-size: 1.5vmax;
+    font-weight: 300;
+    color: white;
+    text-transform: capitalize;
+    word-spacing: 0.6vmax;
+    position: relative;
+}
+
+.sub-line::after{
+    content: '';
+    position: absolute;
+    bottom: -2vmax;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25vmax;
+    height: .2vmin;
+    background-color: white;
+}
+
+.sub-line::before{
+    content: '';
+    position: absolute;
+    bottom: -2.3vmax;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.8vmax;
+    height: 0.8vmax;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.search-Box{
+    width: 100%;
+    padding: 0.8vmax 1.2vmax;
+    font-size: 1.5vmax;
+    border: none;
+    outline: none;
+    border-radius: 0.5vmax ;
+    margin: 3vmax 0 1.5vmax 0 ;
+    text-transform: capitalize;
+}
+
+button{
+    background-color: #2E3442;
+    color: white;
+    font-size: 1.5vmax;
+    text-transform: capitalize;
+    padding: 0.8vmax 2vmax;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0.5vmax;
+}  
+
+button:hover{
+    background-color: #20232c;
+}
+
+/* Gallery */
+
+.Gallery{
+    width: 100%;
+    padding:3.5vmax;
+    background-color: white;
+    columns: 4;
+    column-gap: 2vmax;
+}
+
+.gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 0.5vmax;
+    margin-bottom: 1.7vmax;
+}
+
+.Extra-Image{
+    position: relative;
+    bottom: 3vmax;
+    left: 50%;
+    transform: translateX(-50%);
+}
