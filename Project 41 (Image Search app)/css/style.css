@@ -24,6 +24,7 @@
     /* border: 2px solid red; */
 }
 
+
 .logo{
     font-size: 8vmax;
     text-transform: capitalize;
@@ -86,6 +87,8 @@ button{
     border: none;
     outline: none;
     border-radius: 0.5vmax;
+    transition: 0.4s;
+    letter-spacing: 0.2vmax;
 }  
 
 button:hover{
@@ -117,4 +120,97 @@ button:hover{
     bottom: 3vmax;
     left: 50%;
     transform: translateX(-50%);
+    width: 60%;
+    display: none;
+}
+
+/* Pop-up */
+
+.image-pop{
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:4vmax ;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-pop.hide{
+    display: none;
+    opacity: 0;
+}
+
+.close-btn{
+    position: absolute;
+    top: 1.2vmax;
+    left: 2vmax;
+    width: 2vmax;
+    height: 2vmax;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.close-btn img{
+    width: 1.3vmax;
+}
+
+.download-btn{
+    position: absolute;
+    top: 1.2vmax;
+    right: 2.6vmax;
+    cursor: pointer;
+    background: #2E3442;
+    color: white;
+    font-size: 1vmax;
+    text-decoration: none;
+    padding: 1vmax 2vmax;
+    border-radius: 0.5vmax ;
+    letter-spacing: .3vmax;
+}
+
+
+.Large-img{
+    height: 70%;
+    width: auto;
+    max-width: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.control{
+    width: 1.5vmax;
+    /* background: none; */
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control img{
+    width: 1.5vmax;
+}
+
+.pre-img{
+    left:6%;
+}
+
+.next-img{
+    right: 0;
 }

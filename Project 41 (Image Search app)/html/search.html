@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/search.css" />
+    <title>Image Search Gallery</title>
+</head>
+
+<body>
+    <form action="search.html" class="header-bar">
+        <input type="text" autocomplete="off" name="Search" class="search-Input" placeholder="Search Images..." />
+        <button type="submit" class="search">search</button>
+    </form>
+
+    <!-- Image Popup -->
+    <section class="image-pop hide">
+        <div class="close-btn">
+            <img src="/img/close 2.png" alt="" />
+        </div>
+        <a href="#" class="download-btn" target="_blank">Download Now</a>
+        <img src="/img/BackgroundImage.jpg" class="Large-img" />
+        <button class="control pre-img">
+            <img src="/img/icons8-back-100.png" alt="" />
+        </button>
+        <button class="control next-img">
+            <img src="/img/icons8-forward-100.png" alt="" />
+        </button>
+    </section>
+    <!-- Gallery -->
+    <section class="Gallery"></section>
+    <button class="Extra-Image">show more</button>
+    <script src="../app.js"></script>
+</body>
+
+</html>

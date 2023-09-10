@@ -1,0 +1,22 @@
+.header-bar{
+    width: 100%;
+    padding: 1% 3%;
+    background-color: #2E3442;
+}
+
+.search{
+    background: #684B43;
+    padding: 0.8vmax;
+    font-size: 1vmax;
+    border-radius: 0;
+    margin: 0;
+}
+
+.search-Input{
+    width: 90%;
+    padding: 0.5vmax 1vmax    ;
+    border: none;
+    outline: none;
+    font-size: 1.2vmax;
+}
+
