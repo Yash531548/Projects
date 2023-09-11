@@ -36,7 +36,7 @@ const makeImageCard = (data)=>{
         let imgCard = document.createElement('img')
         imgCard.src = item.urls.regular;
         imgCard.className = 'gallery-img'
-        imgCard.target = '_blank'
+        // imgCard.target = '_blank'
 
         gallery.appendChild(imgCard)
 
@@ -62,17 +62,28 @@ const popupImage = (item) =>{
     const image = document.querySelector('.Large-img')
 
     popup.classList.remove("hide")
-    downloadBtn.href = item.links.html  // this is direct user to unsplash site where picture is display to download
+
+    // downloadBtn.href = item.links.html  // this is direct user to unsplash site where picture is display to download
     // downloadBtn.href = item.links.download // This open image in new tab
     image.src = item.urls.regular
-
+    downloadBtn.addEventListener("click",()=>{
+        downloadImage(item.urls.regular)
+    })
+    
     closeBtn.addEventListener("click",()=>{
         popup.classList.add('hide')
     })
 }
 
-
-// controls
+const downloadImage = (url)=>{
+    //converting img to blob ,creating its download link, & downloading it
+    fetch(url).then(res => res.blob()).then(file => {
+        let a = document.createElement("a")
+        a.href = URL.createObjectURL(file)// create url of passed object
+        a.download = new Date().getTime()
+        a.click()
+    }).catch(()=> alert("Failed to download Image!"))
+}
 
 const preImageBtn = document.querySelector('.pre-img')
 const nextImageBtn = document.querySelector('.next-img')
